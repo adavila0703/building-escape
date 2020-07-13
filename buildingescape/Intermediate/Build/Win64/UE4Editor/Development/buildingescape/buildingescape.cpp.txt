@@ -1,0 +1,2 @@
+C:\Users\adavila11\Documents\GitHub\building-escape\buildingescape\Intermediate\Build\Win64\UE4Editor\Development\buildingescape\Definitions.buildingescape.h
+C:\Users\adavila11\Documents\GitHub\building-escape\buildingescape\Source\buildingescape\buildingescape.h

@@ -1,0 +1,3 @@
+C:\Users\adavila11\Documents\GitHub\building-escape\buildingescape\Intermediate\Build\Win64\UE4Editor\Development\buildingescape\Definitions.buildingescape.h
+C:\Program Files (x86)\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files (x86)\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h

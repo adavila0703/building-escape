@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "buildingescape",
+			"Path": "C:\\Users\\adavila11\\Documents\\GitHub\\building-escape\\buildingescape\\Source\\buildingescape.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "buildingescapeEditor",
+			"Path": "C:\\Users\\adavila11\\Documents\\GitHub\\building-escape\\buildingescape\\Source\\buildingescapeEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
