@@ -2,6 +2,7 @@
 
 
 #include "WorlPosition.h"
+#include "GameFramework/Actor.h"
 
 // Sets default values for this component's properties
 UWorlPosition::UWorlPosition()
@@ -17,9 +18,27 @@ UWorlPosition::UWorlPosition()
 // Called when the game starts
 void UWorlPosition::BeginPlay()
 {
+
+	/*
+	logging
+	UE_LOG(LogTemp, Warning, TEXT("Warning!"));
+	UE_LOG(LogTemp, Error, TEXT("Error!"));
+	UE_LOG(LogTemp, Display, TEXT("Display!"));
+
+	FString Log = TEXT("hello");
+	FString* PtrLog = &Log;
+
+
+	UE_LOG(LogTemp, Warning, TEXT("%s"), **PtrLog);
+
+	*/
+
 	Super::BeginPlay();
 
-	// ...
+	FString ObjectName = GetOwner()->GetName();
+	FString ObjectPos = GetOwner()->GetActorLocation().ToString();
+
+	
 	
 }
 
