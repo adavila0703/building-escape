@@ -1,6 +1,7 @@
 // Angel aka marley-EE is the man!
 
-
+#include "Engine/World.h"
+#include "GameFramework/PlayerController.h"
 #include "OpenDoor.h"
 #include "GameFramework/Actor.h"
 
@@ -26,6 +27,8 @@ void UOpenDoor::BeginPlay()
 		FString actorname = GetOwner()->GetName();
 		UE_LOG(LogTemp, Error, TEXT("%s Doesn't have a trigger component attached!"), *actorname);
 	}
+
+	ActorThatOpens = GetWorld()->GetFirstPlayerController()->GetPawn();
 
 }
 
