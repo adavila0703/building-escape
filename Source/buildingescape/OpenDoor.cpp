@@ -39,11 +39,13 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	if (DoorTrigger && DoorTrigger->IsOverlappingActor(ActorThatOpens))
 	{
 		OpenDoor(DeltaTime);
+		UE_LOG(LogTemp, Warning, TEXT("%f"), GetWorld()->GetTimeSeconds())
 	}
 	if (DoorTrigger && DoorTrigger->IsOverlappingActor(ActorThatOpens) != true)
 	{
 		CloseDoor(DeltaTime);
 	}
+	
 }
 
 void UOpenDoor::OpenDoor(float DeltaTime)
@@ -54,7 +56,7 @@ void UOpenDoor::OpenDoor(float DeltaTime)
 	float objectx = actorlocation.X;
 	FVector newactorlocation = FVector(objectx, objecty, objectz);
 
-	GetOwner()->SetActorLocation(FMath::Lerp(actorlocation, newactorlocation, DeltaTime * 1.5f));
+	GetOwner()->SetActorLocation(FMath::Lerp(actorlocation, newactorlocation, DeltaTime * 2.25f));
 }
 
 void UOpenDoor::CloseDoor(float DeltaTime)
@@ -65,6 +67,6 @@ void UOpenDoor::CloseDoor(float DeltaTime)
 	float objectx = actorlocation.X;
 	FVector newactorlocation = FVector(objectx, objecty, objectz);
 
-	GetOwner()->SetActorLocation(FMath::Lerp(actorlocation, newactorlocation, DeltaTime * 1.5f));
+	GetOwner()->SetActorLocation(FMath::Lerp(actorlocation, newactorlocation, DeltaTime * 2.25f));
 }
 
