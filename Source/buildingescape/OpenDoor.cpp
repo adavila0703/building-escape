@@ -56,7 +56,7 @@ void UOpenDoor::OpenDoor(float DeltaTime)
 	float objectx = actorlocation.X;
 	FVector newactorlocation = FVector(objectx, objecty, objectz);
 
-	GetOwner()->SetActorLocation(FMath::Lerp(actorlocation, newactorlocation, DeltaTime * 2.25f));
+	GetOwner()->SetActorLocation(FMath::Lerp(actorlocation, newactorlocation, DeltaTime * openspeed));
 }
 
 void UOpenDoor::CloseDoor(float DeltaTime)
@@ -67,6 +67,6 @@ void UOpenDoor::CloseDoor(float DeltaTime)
 	float objectx = actorlocation.X;
 	FVector newactorlocation = FVector(objectx, objecty, objectz);
 
-	GetOwner()->SetActorLocation(FMath::Lerp(actorlocation, newactorlocation, DeltaTime * 2.25f));
+	GetOwner()->SetActorLocation(FMath::Lerp(actorlocation, newactorlocation, DeltaTime * closespeed));
 }
 

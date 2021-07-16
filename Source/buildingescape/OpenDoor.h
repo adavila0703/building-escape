@@ -38,4 +38,10 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	AActor* ActorThatOpens;
+
+	UPROPERTY(EditAnywhere)
+	float openspeed = 5.0f;
+
+	UPROPERTY(EditAnywhere)
+	float closespeed = 2.5f;
 };
